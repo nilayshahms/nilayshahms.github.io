@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Twitch Tv Streams</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style type="text/css">
+        body {
+        padding-top: 70px;
+        }
+
+        footer {
+            margin: 50px 0;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                          <input type="text" class="form-control" id="searchQuery" placeholder="Search">
+                        </div>
+                        <button type="button" class="btn btn-default" id="btn_search" >Search</button>
+                </form>
+            </div>
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading -->
+        <div class="row">
+                <h1 class="page-header">
+                    <small id="totalCount">Total 0</small>
+                </h1>
+                <div class="col-lg-12 text-right">
+                    <ul class="pagination">
+                        <li>
+                            <a href="#" id="prev">&laquo;</a>
+                        </li>
+                        <li class="active">
+                            <a href="#" id="current">0/0</a>
+                        </li>
+                        <li>
+                            <a href="#" id="next">&raquo;</a>
+                        </li>
+                    </ul>
+                </div>
+            
+        </div> 
+
+
+
+        <div id="mainContent">
+        <h2><p align="center">No item to display. Use SEARCH to search a stream.</p></h2>
+        </div>
+
+        <template id="template">
+                <div class="row">
+                    <div class="col-md-7">
+                        <a href="#">
+                            <img class="img-responsive" src="" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-5">
+                        <h1></h1>
+                        <hr>
+                        <h4></h4>
+                        <p></p>
+                        <a class="btn btn-primary" href="#" id="details">View Details</a>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <hr>
+        </template>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p align="center">Demo Steaming website</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+    <script src="js/twitchTv.js"></script>
+
+</body>
+
+</html>
